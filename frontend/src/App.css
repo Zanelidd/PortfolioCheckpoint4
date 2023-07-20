@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background: white;
+}
+
+#root{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+

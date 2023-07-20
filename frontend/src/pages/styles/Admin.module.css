@@ -1,0 +1,114 @@
+.admin_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.add_button {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+
+}
+
+
+.projects_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+
+    > :nth-child(2n + 1) {
+        background-color: #d9d9d9a9;
+    }
+
+}
+
+.project_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 3rem;
+
+}
+
+.header_project_line {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 3rem;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.project_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+
+}
+
+.project_block_text {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    overflow: auto;
+}
+
+.project_block_techno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+}
+
+.project_img {
+    height: 55%;
+}
+
+
+.skill_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+
+    > :nth-child(2n + 1) {
+        background-color: #d9d9d9a9;
+    }
+
+}
+
+
+.header_skill_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+    height: 3rem;
+}
+
+.button_add_skill{
+    width : 25%;
+}
+input[type="text"] {
+  height: 55%;
+}

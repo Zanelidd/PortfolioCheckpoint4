@@ -1,0 +1,9 @@
+.project_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100vw;
+    margin-top: 5rem;
+
+}

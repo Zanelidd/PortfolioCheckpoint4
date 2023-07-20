@@ -1,0 +1,23 @@
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.5px solid black;
+    height: 20vh;
+    width: 30vw;
+}
+
+.submit_button{
+    border-radius: 10px;
+    border: 0.5px solid black;
+    height: 1.5rem;
+}
