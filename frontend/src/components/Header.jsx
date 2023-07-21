@@ -7,7 +7,7 @@ import BurgerNavBar from "./BurgerNavBar";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <>
+    <div className={style.header_container}>
       <div className={style.navBarContainer}>
         <NavBar />
       </div>
@@ -15,7 +15,7 @@ const Header = () => {
         <Hamburger toggled={isOpen} toggle={setOpen} />
         {isOpen && <BurgerNavBar isOpen={isOpen} setOpen={setOpen} />}
       </div>
-    </>
+    </div>
   );
 };
 

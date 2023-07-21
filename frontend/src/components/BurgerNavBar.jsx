@@ -8,13 +8,13 @@ const BurgerNavBar = ({ isOpen, setOpen }) => {
     <nav className={style.burger_navBar}>
       <Hamburger toggled={isOpen} toggle={setOpen} />
 
-      <NavLink to="/home" className={style.linkNavBar}>
+      <NavLink to="/home" className={style.linkNavBar} onClick={()=>{setOpen(!isOpen)}}>
         Acceuil
       </NavLink>
-      <NavLink to="/projects" className={style.linkNavBar}>
+      <NavLink to="/projects" className={style.linkNavBar} onClick={()=>{setOpen(!isOpen)}}>
         Projets
       </NavLink>
-      <NavLink to="/contact" className={style.linkNavBar}>
+      <NavLink to="/contact" className={style.linkNavBar} onClick={()=>{setOpen(!isOpen)}}>
         Contact
       </NavLink>
     </nav>

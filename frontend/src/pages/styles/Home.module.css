@@ -6,8 +6,6 @@
 
 }
 
-
-
 .homepage_img {
     height: 30vw;
     width: 30vw;
@@ -44,13 +42,13 @@
     }
     .homepage_txt{
         position: initial;
-        font-size: 25px;
+        font-size: 20px;
         width: 85vw;
     }
     .homepage_img{
         position: initial;
-        height: 60vw;
-        width: 60vw;
+        height: 40vw;
+        width: 40vw;
     }
 
 }

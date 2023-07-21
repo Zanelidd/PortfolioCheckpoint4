@@ -1,3 +1,8 @@
+.header_container{
+    width: 100vw;
+    height: 8vh;
+}
+
 .navBarContainer {
     height: 8vh;
     width: 100vw;
@@ -11,7 +16,7 @@
 
 @media screen and (max-width :720px){
     .navBarContainer{
-        visibility: hidden;
+        display: none;
     }
 
     .burger{
