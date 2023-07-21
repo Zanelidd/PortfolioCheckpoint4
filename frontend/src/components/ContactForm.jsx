@@ -8,12 +8,13 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = () => alert("Votre message est bien envoyé !");
 
   return (
     <form className={style.form_container} onSubmit={handleSubmit(onSubmit)}>
-      <input placeholder="FirstName" {...register("FirstName")} />
-      <input placeholder="LastName" {...register("LastName")} />
+      <p>Vous pouvez me contacter grâce au formulaire suivant : </p>
+      <input placeholder="FirstName" {...register("FirstName", { required: true })} required/>
+      <input placeholder="LastName" {...register("LastName", { required: true })} required/>
       <input placeholder="Email" {...register("Email", { required: true })} />
       {errors.exampleRequired && <span>This field is required</span>}
       <textarea

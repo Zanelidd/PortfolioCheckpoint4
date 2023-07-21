@@ -3,9 +3,10 @@ import Home from "./pages/Home";
 import "./App.css";
 import WelcomePage from "./pages/WelcomePage";
 import Layout from "./layouts/layout";
+
+
 import { useState } from "react";
 import { DarkModeContext } from "./components/Context/DarkModeProvider";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
@@ -21,10 +22,9 @@ function App() {
             <Route path="/" element={<WelcomePage />} />
             <Route element={<Layout />}>
               <Route path="/home" element={<Home />} />
-              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />}/>
+              <Route path="/login" element={<Login />} />
               <Route path="/logged">
                 <Route path="admin" element={<Admin />} />
               </Route>
