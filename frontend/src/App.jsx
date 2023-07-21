@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import "./App.css";
 import WelcomePage from "./pages/WelcomePage";
 import Layout from "./layouts/layout";
+
+
 import { useState } from "react";
 import { DarkModeContext } from "./components/Context/DarkModeProvider";
 import Projects from "./pages/Projects";
@@ -22,7 +24,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />}/>
+              <Route path="/login" element={<Login />} />
               <Route path="/logged">
                 <Route path="admin" element={<Admin />} />
               </Route>

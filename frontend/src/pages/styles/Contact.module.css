@@ -1,12 +1,12 @@
-.project_cards {
+.contact_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 92vh;
     width: 100vw;
-    margin-top: 5rem;
-
 }
+
 .buttonDarkMode{
     width: 10rem;
     height: 5rem;
@@ -28,15 +28,3 @@
     
         
         }
-
-@media screen and (max-width : 720px) {
-    .project_cards {
-        display: flex;
-        justify-content: space-around;
-        width: 100vw;
-        margin-top: 5rem;
-        gap:2rem;
-    
-    }
-    
-}
