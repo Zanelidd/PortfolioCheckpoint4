@@ -54,10 +54,10 @@ const Admin = () => {
   const HandleDeleteSkillsModal = () => {
     setSkillDelete(!skillDelete);
   };
-
+console.log(projects);
   return (
     <>
-      <h1>Admin</h1>
+      <h1>Administration</h1>
       <div className={style.admin_container}>
         <ProjectAdmin
           projects={projects}

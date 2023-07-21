@@ -13,7 +13,8 @@ CREATE TABLE
         id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
         title varchar(255) NOT NULL,
         description VARCHAR(1200) NOT NULL,
-        img VARCHAR(255) NOT NULL
+        img VARCHAR(255) NOT NULL,
+        url VARCHAR(255) NOT NULL
     ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 CREATE TABLE
@@ -32,11 +33,12 @@ CREATE TABLE
     ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 INSERT INTO
-    projects (title, description, img)
+    projects (title, description, img, url)
 VALUES (
         'Quîzzz',
         'Doodads',
-        'Quizzz.png'
+        'Quizzz.png',
+        'https://wildcodeschool.github.io/2023-02-JS-RemoteFR-DeVMX-P1-G1/'
     );
 
 INSERT INTO
