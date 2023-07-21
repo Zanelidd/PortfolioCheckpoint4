@@ -95,6 +95,12 @@ font-size: 2em;
    
 }
 
+.subtitleDarkMode{
+    font-family: 'Kreon', serif;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
 .nameDarkMode{
     width: 90vw;
     border: none;
@@ -177,4 +183,27 @@ color : white;
     right : 1rem;
 
     
+    }
+
+    @media screen and (max-width : 720px) {
+       
+        .name { 
+            font-size: 4em;
+        }
+
+        .subtitle{
+        font-size: 1em;
+        
+           
+        }
+
+        .nameDarkMode{
+            font-size: 4em;
+            
+        }
+
+        .subtitleDarkMode{
+            font-size: 1em;
+            color: white;
+        }
     }

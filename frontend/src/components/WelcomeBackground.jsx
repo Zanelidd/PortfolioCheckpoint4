@@ -95,7 +95,7 @@ const WelcomeBackground = () => {
             >
               ARNAUD DAMIEN
             </button>
-            <span className={style.subtitle}>Web & Web Mobile Developper</span>
+            <span className={darkMode ? style.subtitleDarkMode : style.subtitle}>Web & Web Mobile Developper</span>
           </div>
         </Html>
       </Canvas>

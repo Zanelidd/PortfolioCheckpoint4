@@ -17,8 +17,8 @@ class ProjectsManager extends AbstractManager {
 
   insert(project) {
     return this.database.query(
-      `insert into ${this.table} (title, description, img) values (?,?,?)`,
-      [project.title, project.description, project.img]
+      `insert into ${this.table} (title, description, img, url) values (?,?,?,?)`,
+      [project.title, project.description, project.img,project.url]
     );
   }
 
