@@ -11,14 +11,11 @@ const BurgerNavBar = ({ isOpen, setOpen }) => {
       <NavLink to="/home" className={style.linkNavBar}>
         Acceuil
       </NavLink>
-      <NavLink to="/about" className={style.linkNavBar}>
-        A propos
-      </NavLink>
       <NavLink to="/projects" className={style.linkNavBar}>
         Projets
       </NavLink>
       <NavLink to="/contact" className={style.linkNavBar}>
-        Contactez moi
+        Contact
       </NavLink>
     </nav>
   );

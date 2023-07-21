@@ -129,6 +129,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
         />
       </label>
       <label htmlFor="img">
+        Ajouter une image
         <input
           type="file"
           id="img"
