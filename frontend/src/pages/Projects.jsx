@@ -18,11 +18,12 @@ const Projects = () => {
       })
       .catch((err) => console.error(err));
   }, []);
-  console.log(projects);
+
   return (
     <>
       <Canvas
         style={{
+          // height :"auto",
           width: "100vw",
           position: "absolute",
         }}
@@ -80,12 +81,15 @@ const Projects = () => {
           >
             Dark Mode
           </button>
+          <div className={style.project_card_container}>
+
           <h1 className={darkMode ? style.title_dark : style.title}>Projets</h1>
           <div className={style.project_cards}>
             {projects.map((project) => {
               return <ProjectCards key={project.id} project={project} />;
             })}
           </div>
+            </div>
         </Html>
       </Canvas>
     </>

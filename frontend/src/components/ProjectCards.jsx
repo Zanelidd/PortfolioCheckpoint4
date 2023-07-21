@@ -15,7 +15,6 @@ const ProjectCards = ({ project }) => {
       .catch((err) => console.error(err));
   }, [project.id]);
 
-  console.log(skillsValue);
   return (
     <div className={style.project_container}>
       <h2 className={style.project_title}>{project.title}</h2>

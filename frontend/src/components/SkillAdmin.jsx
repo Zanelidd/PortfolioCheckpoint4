@@ -69,7 +69,6 @@ const SkillAdmin = ({
                   alt="update"
                   onClick={() => {
                     HandleSkillsModal();
-                    HandleDeleteSkillsModal();
                     setSelectedSkills(skill);
                   }}
                 />
