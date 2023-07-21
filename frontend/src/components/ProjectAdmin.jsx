@@ -27,6 +27,7 @@ const ProjectAdmin = ({
           <div className={style.project_block}>Description </div>
           <div className={style.project_block}>Technologies</div>
           <div className={style.project_block}>Image</div>
+          <div className={style.project_block}>URL</div>
           <div className={style.project_block}>Mise à jour</div>
           <div className={style.project_block}>Supprimer</div>
         </div>
@@ -55,6 +56,7 @@ const ProjectAdmin = ({
                 })}
               </div>
               <div className={style.project_block}>{project.img}</div>
+              <div className={style.project_block}>{project.url}</div>
               <div className={style.project_block}>
                 <img
                   className={style.project_img}

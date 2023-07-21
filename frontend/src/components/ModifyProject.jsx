@@ -19,7 +19,7 @@ const ModifyProject = ({ selectProject,HandleModifyModal}) => {
     title: selectProject.title,
     description: selectProject.description,
     img: selectProject.img,
-    technologie: selectProject.technologie,
+    url: selectProject.url,
   };
 
   const [modify, dispatch] = useReducer(reducer, initialState);
@@ -117,7 +117,7 @@ ModifyProject.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
-    technologie: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
   HandleModifyModal:PropTypes.func.isRequired,
 };

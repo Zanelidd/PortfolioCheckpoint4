@@ -29,7 +29,7 @@ const SkillAdmin = ({
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/upload`, FormData)
       .then((response) => {
-        console.log(response.data)
+        console.log(response.data);
         if (response.status === 201) {
           axios.post(`${import.meta.env.VITE_BACKEND_URL}/skills`, {
             label: skillName,
@@ -89,7 +89,13 @@ const SkillAdmin = ({
             </div>
           );
         })}
-        <form id="myForm" name="myForm" onSubmit={HandleSubmit}>
+        <form
+          className={style.skill_form}
+          encType="multipart/form-data"
+          id="myForm"
+          name="myForm"
+          onSubmit={HandleSubmit}
+        >
           <div className={style.header_skill_add}>
             <input
               className={style.project_block}
@@ -99,12 +105,15 @@ const SkillAdmin = ({
                 setSkillName(e.target.value);
               }}
             />
-            <input
-              className={style.project_block}
-              type="file"
-              id="img"
-              ref={inputRef}
-            />
+            <label htmlFor="img" className={style.label_img}>
+              Ajout de fichier
+              <input
+                className={style.project_block}
+                type="file"
+                id="img"
+                ref={inputRef}
+              />
+            </label>
             <div className={style.project_block}></div>
             <div className={style.project_block}>
               <button className={style.button_add_skill} type="submit">

@@ -24,6 +24,9 @@ const ProjectCards = ({ project }) => {
           className={style.project_img}
           src={`${import.meta.env.VITE_BACKEND_URL}/upload/${project.img}`}
           alt={project.title}
+          onClick={() => {
+            location.href = project.url;
+          }}
         />
         <p className={style.project_text}>{project.description}</p>
       </div>
@@ -52,6 +55,7 @@ ProjectCards.propTypes = {
     img: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
 };
 

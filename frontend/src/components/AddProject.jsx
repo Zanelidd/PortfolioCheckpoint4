@@ -16,17 +16,18 @@ const AddProject = ({ HandleAddModal, skills }) => {
     },
     control: (base) => ({
       ...base,
-      boxShadow: "5px 5px 8px #bdbdbd",
+      boxShadow: "10px 5px 10px rgb(186, 186, 186);",
       borderRadius: "10px",
-      width: "auto",
-      minWidth: "30vw",
+      width: "20vw",
+      minWidth: "25vw",
+      heigth: " 1.5rem",
     }),
 
     options: (base) => ({
       ...base,
       backgroundColor: "white",
       border: "1px #bdbdbd solid",
-      boxShadow: "5px 5px 8px #bdbdbd ",
+      boxShadow: "10px 5px 10px rgb(186, 186, 186); ",
       borderRadius: "10px",
     }),
   };
@@ -62,6 +63,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
     title: "",
     description: "",
     img: "",
+    url: "",
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -73,7 +75,9 @@ const AddProject = ({ HandleAddModal, skills }) => {
         if (response.status === 201) {
           selectedSkills.map((selectedSkill) => {
             axios.post(
-              `${import.meta.env.VITE_BACKEND_URL}/project/${response.data[0].insertId}/skills`,
+              `${import.meta.env.VITE_BACKEND_URL}/project/${
+                response.data[0].insertId
+              }/skills`,
               {
                 projectId: response.data[0].insertId,
                 skillId: selectedSkill.id,
@@ -95,7 +99,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
       <h3>Ajouter un projet</h3>
       <label htmlFor="Title">
         <input
-         placeholder=" Nom"
+          placeholder=" Nom"
           type="text"
           id="Title"
           value={state.title}
@@ -110,7 +114,8 @@ const AddProject = ({ HandleAddModal, skills }) => {
       </label>
       <label htmlFor="description">
         <textarea
-        placeholder="Decription"
+        className={style.admin_textarea}
+          placeholder="Decription"
           type="text"
           id="description"
           value={state.description}
@@ -137,6 +142,21 @@ const AddProject = ({ HandleAddModal, skills }) => {
           }}
         />
       </label>
+      <label htmlFor="url">
+        <input
+          placeholder="url"
+          type="text"
+          id="url"
+          value={state.url}
+          onChange={(e) => {
+            dispatch({
+              type: "update_input",
+              value: e.target.value,
+              key: "url",
+            });
+          }}
+        />
+      </label>
       <label htmlFor="technologie">
         Skills
         <AsyncSelect
@@ -151,6 +171,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
       </label>
       <div className={style.button_container}>
         <button
+          className={style.send_add_button}
           type="button"
           onClick={() => {
             handleSubmit(state), HandleAddModal();

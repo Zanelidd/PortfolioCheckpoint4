@@ -5,13 +5,15 @@ class ProjectsManager extends AbstractManager {
     super({ table: "projects" });
   }
 
-
   findAllWithSkills(projectId) {
-    return this.database.query(`select * from  ${this.table}
+    return this.database.query(
+      `select * from  ${this.table}
     INNER JOIN projects_skills AS ps ON ${this.table}.id = ps.project_id
     INNER JOIN skills AS s ON s.id= ps.skills_id 
-    WHERE ${this.table}.id =?`,[projectId]);
-  } 
+    WHERE ${this.table}.id =?`,
+      [projectId]
+    );
+  }
 
   insert(project) {
     return this.database.query(
@@ -22,8 +24,8 @@ class ProjectsManager extends AbstractManager {
 
   update(project) {
     return this.database.query(
-      `update ${this.table} set title = ?, description = ?, img = ? where id = ?`,
-      [project.title, project.description, project.img, project.id]
+      `update ${this.table} set title = ?, description = ?, img = ?, url=? where id = ?`,
+      [project.title, project.description, project.img,project.url, project.id]
     );
   }
 }
