@@ -139,7 +139,7 @@
 }
 
 .button_add_skill {
-    width: 25%;
+    width: 30%;
     height: 1.5rem;
     background-color: #71A5BC;
     color: white;
@@ -182,8 +182,8 @@ input[type="file"] {
     box-shadow: 5px 5px 10px rgba(186, 186, 186, 0.647);
 }
 
-input{
-    border:none;
+input {
+    border: none;
     box-shadow: 5px 5px 10px rgba(186, 186, 186, 0.647);
     border-radius: 5px;
 }
@@ -193,25 +193,53 @@ input{
     box-shadow: 10px 5px 10px rgb(186, 186, 186);
     border-radius: 5px;
 }
-.buttonDarkMode{
-    width: 10rem;
-    height: 5rem;
+
+.buttonDarkMode {
+    width: 5rem;
+    height: 2rem;
     background-color: rgba(255, 252, 252, 0);
-    position:absolute;
-    border:none;
-    right : 1rem;
-    color : white;
-    
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    border: none;
+    color: white;
+
+}
+
+.buttonLightMode {
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    border: none;
+    right: 2%;
+    top: 3%;
+
+
+}
+
+
+.title_dark {
+    color: white;
+}
+
+
+@media screen and (max-width : 768px) {
+    .title{
+        font-size: 1.5rem;
     }
     
-    .buttonLightMode{
-        width: 10rem;
-        height: 5rem;
-        background-color: rgba(255, 255, 255, 0);
-        position:absolute;
-        border:none;
-        right : 1rem;
-    
-        
-        }
-    
+    .title_dark {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .add_button{
+        font-size:0.8rem ;
+        width: 6rem;
+        height: 2.2rem;
+    } 
+    .label_img{
+        width: 6rem;
+        height: 2rem;
+    }
+}

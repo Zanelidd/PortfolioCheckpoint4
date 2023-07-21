@@ -25,7 +25,6 @@ const Projects = () => {
         style={{
           width: "100vw",
           position: "absolute",
-          // zIndex: "-10",
         }}
         camera={{ position: [0, 0, 10], fov: 65 }}
       >
@@ -81,7 +80,7 @@ const Projects = () => {
           >
             Dark Mode
           </button>
-          <h1>Projects</h1>
+          <h1 className={darkMode ? style.title_dark : style.title}>Projets</h1>
           <div className={style.project_cards}>
             {projects.map((project) => {
               return <ProjectCards key={project.id} project={project} />;

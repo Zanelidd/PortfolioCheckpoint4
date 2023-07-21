@@ -8,7 +8,6 @@ const Home = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
   return (
     <>
-
       <Canvas
         style={{
           height: "92vh",
@@ -61,16 +60,18 @@ const Home = () => {
         />
 
         <Html center>
-        <button
-        className={darkMode ? style.buttonDarkMode : style.buttonLightMode}
-        type="button"
-        onClick={() => {
-          setDarkMode(!darkMode);
-        }}
-      >
-        Dark Mode
-      </button>
           <div className={style.home_container}>
+            <button
+              className={
+                darkMode ? style.buttonDarkMode : style.buttonLightMode
+              }
+              type="button"
+              onClick={() => {
+                setDarkMode(!darkMode);
+              }}
+            >
+              Dark Mode
+            </button>
             <img
               className={style.homepage_img}
               src=".\src\assets\20171009_120133.jpg"

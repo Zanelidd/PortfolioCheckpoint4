@@ -70,7 +70,9 @@ const Contact = () => {
           Dark Mode
         </button>
         <div className={style.contact_container}>
-          <h1>Contactez-moi</h1>
+          <h1 className={darkMode ? style.title_dark : style.title}>
+            Contactez-moi
+          </h1>
           <ContactForm />
         </div>
       </Html>

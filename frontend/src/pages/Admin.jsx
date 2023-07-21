@@ -63,8 +63,7 @@ const Admin = () => {
         style={{
           height: "92vh",
           width: "100vw",
-          position: "absolute",
-          // zIndex: "-10",
+
         }}
         camera={{ position: [0, 0, 10], fov: 65 }}
       >
@@ -120,7 +119,7 @@ const Admin = () => {
           >
             Dark Mode
           </button>
-          <h1>Administration</h1>
+          <h1 className={darkMode ? style.title_dark : style.title}>Administration</h1>
           <div className={style.admin_container}>
             <ProjectAdmin
               projects={projects}

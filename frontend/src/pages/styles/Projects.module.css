@@ -5,29 +5,39 @@
     height: 90vh;
     width: 100vw;
     margin-top: 5rem;
+    position: relative;
+
 
 }
-.buttonDarkMode{
-    width: 10rem;
-    height: 5rem;
+
+.buttonDarkMode {
+    width: 5rem;
+    height: 2rem;
     background-color: rgba(255, 252, 252, 0);
-    position:absolute;
-    border:none;
-    right : 1rem;
-    color : white;
-    
-    }
-    
-    .buttonLightMode{
-        width: 10rem;
-        height: 5rem;
-        background-color: rgba(255, 255, 255, 0);
-        position:absolute;
-        border:none;
-        right : 1rem;
-    
-        
-        }
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    border: none;
+    color: white;
+
+}
+
+.buttonLightMode {
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    border: none;
+    right: 2%;
+    top: 3%;
+
+
+}
+
+.title_dark {
+    color: white;
+}
+
 
 @media screen and (max-width : 720px) {
     .project_cards {
@@ -35,8 +45,8 @@
         justify-content: space-around;
         width: 100vw;
         margin-top: 5rem;
-        gap:2rem;
-    
+        gap: 2rem;
+
     }
-    
+
 }

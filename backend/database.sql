@@ -36,7 +36,10 @@ INSERT INTO
     projects (title, description, img, url)
 VALUES (
         'Quîzzz',
-        'Doodads',
+        ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              eget dui eget nulla tristique lacinia eu sit amet diam. Maecenas
+              placerat sit amet lorem porttitor ultricies. Proin id ipsum sit
+              amet tortor pretium rutrum. Pellentesque ut maximus mauris.',
         'Quizzz.png',
         'https://wildcodeschool.github.io/2023-02-JS-RemoteFR-DeVMX-P1-G1/'
     );
