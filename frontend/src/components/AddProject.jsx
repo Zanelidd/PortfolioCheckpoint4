@@ -72,6 +72,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/projects`, state)
       .then((response) => {
+        console.log(response.data);
         if (response.status === 201) {
           selectedSkills.map((selectedSkill) => {
             axios.post(

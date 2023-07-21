@@ -18,6 +18,36 @@
     border: 1px solid rgba(151, 147, 147, 0.3);
 }
 
+.add_container input{
+    width: 25rem;
+}
+
+.add_container textarea{
+    width: 25rem;
+}
+.button_container button{
+    width: 15rem;
+    height: 1.5rem;
+    background-color: #71A5BC;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgb(186, 186, 186);
+
+    &:hover {
+        transform: translate(0px, -2px);
+        box-shadow: white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px,
+            #9c9c9c 1px 2px 1px, #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px,
+            #9c9c9c 1px 5px 1px, rgba(16, 16, 16, 0.4) 1px 10px 10px,
+            rgba(16, 16, 16, 0.2) 1px 10px 10px,
+            rgba(16, 16, 16, 0.2) 1px 10px 10px,
+            white -0.15em -0.1em 100px;
+    }
+
+    &:active {
+        transform: translate(0px, 2px);
+    }
+}
 .exit {
     position: absolute;
     top: 0.8rem;
@@ -29,7 +59,7 @@
 }
 
 .send_add_button {
-    width: 5rem;
+    width: 15rem;
     height: 1.5rem;
     background-color: #71A5BC;
     color: white;
