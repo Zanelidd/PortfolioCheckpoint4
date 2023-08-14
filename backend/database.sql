@@ -42,7 +42,24 @@ VALUES (
               amet tortor pretium rutrum. Pellentesque ut maximus mauris.',
         'Quizzz.png',
         'https://wildcodeschool.github.io/2023-02-JS-RemoteFR-DeVMX-P1-G1/'
-    );
+    ),(
+        'SpaceMx',
+        ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              eget dui eget nulla tristique lacinia eu sit amet diam. Maecenas
+              placerat sit amet lorem porttitor ultricies. Proin id ipsum sit
+              amet tortor pretium rutrum. Pellentesque ut maximus mauris.',
+        'SpaceMx.jpg',
+        'https://2023-02-js-remote-fr-de-vmx-p2-g1-machonauts-gy4xgc95k-spacemx.vercel.app/'
+    ),(
+        'MerBnB',
+        ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              eget dui eget nulla tristique lacinia eu sit amet diam. Maecenas
+              placerat sit amet lorem porttitor ultricies. Proin id ipsum sit
+              amet tortor pretium rutrum. Pellentesque ut maximus mauris.',
+        'MerBnB.png',
+        'https://merbnb-jkio2g8q1-webdevbynight.vercel.app/'
+    )
+    ;
 
 INSERT INTO
     user (email, password)
@@ -58,4 +75,4 @@ VALUES ('HTML', 'html.png'), ('CSS', 'css.png'), (
     );
 
 INSERT INTO projects_skills (skills_id, project_id)
-VALUES (1,1), (2,1), (3,1);
+VALUES (1,1), (2,1), (3,1),(1,2), (2,2), (3,2),(1,3), (2,3), (3,3);

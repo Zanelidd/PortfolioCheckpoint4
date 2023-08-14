@@ -13,7 +13,7 @@ const SkillAdmin = ({
   const [skillName, setSkillName] = useState();
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/skills`).then((response) => {
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/skill`).then((response) => {
       setSkills(response.data);
     });
   }, []);
