@@ -12,7 +12,9 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/projects`)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/projects`, {
+        withCredentials: true,
+      })
       .then((response) => {
         setProjects(response.data);
       })
