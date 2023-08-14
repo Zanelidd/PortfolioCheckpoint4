@@ -74,7 +74,7 @@ const Home = () => {
             </button>
             <img
               className={style.homepage_img}
-              src=".\public\assets\20171009_120133.jpg"
+              src="/assets/20171009_120133.jpg"
               alt="image"
             />
             <p className={style.homepage_txt}>
