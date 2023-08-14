@@ -65,7 +65,7 @@ const SkillAdmin = ({
               <div className={style.project_block}>
                 <img
                   className={style.project_img}
-                  src="/public/assets/rafraichir.png"
+                  src="/assets/rafraichir.png"
                   alt="update"
                   onClick={() => {
                     HandleSkillsModal();
@@ -77,7 +77,7 @@ const SkillAdmin = ({
               <div className={style.project_block}>
                 <img
                   className={style.project_img}
-                  src="/public/assets/supprimer.png"
+                  src="/assets/supprimer.png"
                   alt="delete"
                   onClick={() => {
                     HandleDeleteSkillsModal();
