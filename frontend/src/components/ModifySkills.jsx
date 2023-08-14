@@ -32,7 +32,7 @@ const ModifySkills = ({ HandleSkillsModal }) => {
       <div className={style.add_container}>
         <img
           className={style.exit}
-          src="/src/assets/traverser.png"
+          src="/public/assets/traverser.png"
           alt="exit"
           onClick={HandleSkillsModal}
         />

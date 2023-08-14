@@ -60,7 +60,7 @@ const ProjectAdmin = ({
               <div className={style.project_block}>
                 <img
                   className={style.project_img}
-                  src="/src/assets/rafraichir.png"
+                  src="/public/assets/rafraichir.png"
                   alt="update"
                   onClick={() => {
                     HandleModifyModal(), setSelectProject(project);
@@ -71,7 +71,7 @@ const ProjectAdmin = ({
               <div className={style.project_block}>
                 <img
                   className={style.project_img}
-                  src="/src/assets/supprimer.png"
+                  src="/public/assets/supprimer.png"
                   alt="delete"
                   onClick={() => {
                     HandleDeleteModal(), setSelectProject(project);
