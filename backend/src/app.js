@@ -19,7 +19,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL ,
+    origin: process.env.FRONTEND_URL ?? "https://front-test-geoa.onrender.com ",
     optionsSuccessStatus: 200,
     credentials: true,
   })
