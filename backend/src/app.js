@@ -1,6 +1,5 @@
 // import some node modules for later
 
-const path = require("node:path");
 
 // create express app
 
