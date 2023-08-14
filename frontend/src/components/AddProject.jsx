@@ -93,7 +93,7 @@ const AddProject = ({ HandleAddModal, skills }) => {
     <div className={style.add_container}>
       <img
         className={style.exit}
-        src="/src/assets/traverser.png"
+        src="/assets/traverser.png"
         alt="exit"
         onClick={HandleAddModal}
       />
