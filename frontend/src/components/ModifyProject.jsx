@@ -36,7 +36,7 @@ const ModifyProject = ({ selectProject,HandleModifyModal}) => {
 
   return (
     <div className={style.add_container}>
-          <img className={style.exit} src="/src/assets/traverser.png" alt="exit" onClick={HandleModifyModal}  />
+          <img className={style.exit} src="/public/assets/traverser.png" alt="exit" onClick={HandleModifyModal}  />
       <h3>Modifier le projet</h3>
       <label htmlFor="Title">
         <input
