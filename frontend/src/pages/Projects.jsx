@@ -23,7 +23,7 @@ const Projects = () => {
     <>
       <Canvas
         style={{
-          // height :"auto",
+          height :"100vh",
           width: "100vw",
           position: "absolute",
         }}
