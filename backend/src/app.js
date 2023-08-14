@@ -1,5 +1,5 @@
 // import some node modules for later
-const fs = require("node:fs");
+const fs = require("fs");
 const path = require("path");
 
 // create express app
