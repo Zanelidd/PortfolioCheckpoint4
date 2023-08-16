@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
 import WelcomePage from "./pages/WelcomePage";
-import Layout from "./layouts/layout";
+import Layout from "./layouts/Layout";
 
 
 import { useState } from "react";
