@@ -12,6 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.0.1",
-    "hamburger-react": "^2.5.0"
   }
 }
