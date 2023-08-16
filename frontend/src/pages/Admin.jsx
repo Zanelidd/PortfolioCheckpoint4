@@ -3,7 +3,7 @@ import axios from "axios";
 import { Canvas } from "@react-three/fiber";
 import { Cloud, Html, Sky, Stars } from "@react-three/drei";
 import { DarkModeContext } from "../components/Context/DarkModeProvider";
-import DeleteModal from "../components/deleteModal";
+import DeleteModal from "../components/DeleteModal";
 import AddProject from "../components/AddProject";
 import ModifyProject from "../components/ModifyProject";
 import ModifySkills from "../components/ModifySkills";
