@@ -19,6 +19,9 @@ const NavBar = () => {
       <NavLink to="/contact" className={darkMode ? style.darklinkNavBar : style.linkNavBar}>
         Contact
       </NavLink>
+      <NavLink to="/logged/admin" className={darkMode ? style.darklinkNavBar : style.linkNavBar}>
+        Admin
+      </NavLink>
     </nav>
   );
 };
